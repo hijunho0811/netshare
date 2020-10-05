@@ -23,17 +23,3 @@ class Profile(models.Model):
     )
     about = models.CharField(max_length=300, blank=True)
     
-
-    GENDER_C = (
-        ('선택안함', '선택안함'),
-        ('여성', '여성'),
-        ('남성', '남성'),
-    )
-
-
-    gender = models.CharField(
-                        '성별(선택사항)',
-                        max_length=10,
-                        choices=GENDER_C,
-                        default='N',
-    )
